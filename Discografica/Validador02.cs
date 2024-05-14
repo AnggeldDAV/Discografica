@@ -10,7 +10,9 @@ namespace Discografica
     {
         public bool IsValid(IReproducible elemento)
         {
-            return (elemento.Duracion > 7 && elemento.Duracion <15);
+            var Min = new TimeSpan(0,7,0);
+            var Max = new TimeSpan(0, 15, 0);
+            return (elemento.Duracion > Min && elemento.Duracion < Max);
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Discografica
 {
     public interface IReproducible
     {
-        public int Duracion {  get; set; }
+        public TimeSpan Duracion {  get; set; }
     }
 }

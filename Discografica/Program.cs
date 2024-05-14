@@ -2,7 +2,7 @@
 
 IFactory Fabrica = new Fabrica01();
 Fabrica.Validador = new Validador01();
-Lista02 Lista = new Lista02();
+Lista02 Lista = new ();
 
 
 IReproducible reproducible1 = Fabrica.CreaRepoducible(TipoRepoducible.Canciones);

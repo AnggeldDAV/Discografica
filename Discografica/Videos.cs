@@ -8,6 +8,6 @@ namespace Discografica
 {
     public class Videos : IReproducible
     {
-        public int Duracion { get; set; } = 5;
+        public TimeSpan Duracion { get; set; } = new TimeSpan(0, 5, 20);
     }
 }

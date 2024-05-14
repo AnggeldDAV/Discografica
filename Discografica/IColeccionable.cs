@@ -10,7 +10,7 @@ namespace Discografica
     {
         public void Add(IReproducible elemento);
         public int Count();
-        public int DameDuracionTotal();
+        public TimeSpan DameDuracionTotal();
 
 
 

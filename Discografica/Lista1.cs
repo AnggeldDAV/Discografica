@@ -8,8 +8,8 @@ namespace Discografica
 {
     public class Lista1 : IColeccionable
     {
-        public int TotalDuracion { get; set; } = 0;
-        public List<IReproducible> Reproducibles { get; set; } = new();
+        public TimeSpan TotalDuracion { get; set; } = new TimeSpan(0);
+        public  List<IReproducible> Reproducibles { get; set; } = new();
 
         public void Add(IReproducible elemento)
         {
@@ -19,7 +19,7 @@ namespace Discografica
         {
             return Reproducibles.Count();
         }
-        public int DameDuracionTotal()
+        public TimeSpan DameDuracionTotal()
         {
             foreach (var element in Reproducibles)
             {

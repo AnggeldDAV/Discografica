@@ -8,6 +8,6 @@ namespace Discografica
 {
     public class Podcasts : IReproducible
     {
-        public int Duracion { get; set; } = 8;
+        public TimeSpan Duracion { get; set; } = new TimeSpan(0, 8, 10);
     }
 }
